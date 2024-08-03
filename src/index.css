@@ -1,0 +1,157 @@
+nav.navbar{
+    background-color: #2C3E50 !important;
+    padding-block: 25px;
+    transition: padding-block .5s ease-in-out;
+    width: 100vw !important;
+}
+
+section#details{
+    background-color: #2C3E50 !important;
+    padding-block: 80px;
+}
+
+.nav-link,
+.navbar-brand{
+    color: #fff !important;
+    font-weight: bolder !important;
+}
+
+.nav-link{
+    border-radius: 5px;
+    display: inline-block !important;
+    padding: 8px !important;
+    width: fit-content;
+}
+
+.nav-link.active{
+    background-color: #1ABC9C;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+}
+
+footer{
+    background-color: #1a252f;
+}
+
+.section-bg{
+    background-color: #1ABC9C !important;
+}
+
+.min-89vh{
+    min-height: calc(100vh - 70px);
+}
+
+.mt-70px{
+    margin-top: 70px;
+}
+
+.line{
+    width: 80px;
+    height: 4px;
+    background-color: #fff;
+}
+
+section#portfolio h1,
+section#contact h1{
+    color: #2C3E50;
+}
+
+.portfolio-card{
+    cursor: pointer;
+    position: relative;
+}
+
+.portfolio-card::after{
+    content: '\f067';
+    font-family: 'Font Awesome 6 Free';
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1abc9cbe;
+    font-size: 100px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.portfolio-card:hover::after{
+    opacity: 1;
+}
+
+.img-overlay{
+    z-index: 999999;
+}
+
+.img-overlay img{
+    width: 100%;
+}
+
+.contact-form-container{
+    width: 100%;
+}
+
+.form-control:focus {
+    box-shadow: unset !important;
+}
+
+.form-floating > input:focus + label,
+.form-floating > input:not(:placeholder-shown) + label {
+    color: #1ABC9C !important;
+}
+
+section#contact{
+    padding-block: 100px;
+}
+
+.w-fit-content{
+    width: fit-content !important;
+}
+
+.not-found-img{
+    width: 50vw;
+}
+
+/* sm */
+@media (min-width: 576px) {
+    .img-overlay img{
+        width: 75%;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .contact-form-container{
+        width: 50%;
+    }
+    
+}
+
+/* lg */
+@media (min-width: 992px) {
+    .img-overlay img{
+        width: 50%;
+    }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+    
+}
+
+/* xxl */
+@media (min-width: 1400px) {
+
+}
